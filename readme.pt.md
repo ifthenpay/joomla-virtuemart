@@ -1,6 +1,6 @@
 # Ifthenpay Joomla/Virtuemart payment gateway
 
-Ler em [:portugal: Português](readme.pt.md), e [:gb: Inglês](readme.md)
+Ler em :portugal: [Português](readme.pt.md), e :gb:[Inglês](readme.md)
 
 [1. Introdução](#Introdução)
 
