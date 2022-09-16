@@ -52,23 +52,23 @@ Installation is straightforward:
 </br>
 
 * download the zip file in the release Link
-![extensions_install](https://github.com/ifthenpay/dev_joomla_3_virtuemart/raw/assets/img/en/download_installer.png)
+![extensions_install](https://github.com/ifthenpay/joomla-virtuemart/raw/assets/img/en/download_installer.png)
 </br>
 
 * in Joomla backoffice top menu bar, go to Extensions/Manage/Install
-![extensions_install](https://github.com/ifthenpay/dev_joomla_3_virtuemart/raw/assets/img/en/extensions_install.png)
+![extensions_install](https://github.com/ifthenpay/joomla-virtuemart/raw/assets/img/en/extensions_install.png)
 </br>
 
 * drag the previously downloaded zip to the box that says "Drag and drop file here..."
-![drag_install](https://github.com/ifthenpay/dev_joomla_3_virtuemart/raw/assets/img/en/drag_install.png)
+![drag_install](https://github.com/ifthenpay/joomla-virtuemart/raw/assets/img/en/drag_install.png)
 </br>
 
 * in Joomla backoffice top menu bar, go to VirtueMart/Payment Methods
-![view_payment_methods](https://github.com/ifthenpay/dev_joomla_3_virtuemart/raw/assets/img/en/view_payment_methods.png)
+![view_payment_methods](https://github.com/ifthenpay/joomla-virtuemart/raw/assets/img/en/view_payment_methods.png)
 </br>
 
 * click the " + New " button
-![new_payment_method](https://github.com/ifthenpay/dev_joomla_3_virtuemart/raw/assets/img/en/new_payment_method.png)
+![new_payment_method](https://github.com/ifthenpay/joomla-virtuemart/raw/assets/img/en/new_payment_method.png)
 </br>
 
 * fill the payment method information, and click the "Save" button:
@@ -81,26 +81,26 @@ Installation is straightforward:
 7. **List Order** - Optional (according to your shop needs)
 8. **Currency** - Euro is selected by default, since it is currently the only supported currency
 
-![fill_information](https://github.com/ifthenpay/dev_joomla_3_virtuemart/raw/assets/img/en/fill_information.png)
+![fill_information](https://github.com/ifthenpay/joomla-virtuemart/raw/assets/img/en/fill_information.png)
 </br>
 
 
 # Configuration
 
 * in Joomla backoffice top menu bar, go to VirtueMart/Payment Methods
-![view_payment_methods](https://github.com/ifthenpay/dev_joomla_3_virtuemart/raw/assets/img/en/view_payment_methods.png)
+![view_payment_methods](https://github.com/ifthenpay/joomla-virtuemart/raw/assets/img/en/view_payment_methods.png)
 </br>
 
 * click the Payment Method you just added
-![select_ifthenpay](https://github.com/ifthenpay/dev_joomla_3_virtuemart/raw/assets/img/en/select_ifthenpay.png)
+![select_ifthenpay](https://github.com/ifthenpay/joomla-virtuemart/raw/assets/img/en/select_ifthenpay.png)
 </br>
 
 * open the configuration tab (this tab should be opened by default)
-![config_tab](https://github.com/ifthenpay/dev_joomla_3_virtuemart/raw/assets/img/en/config_tab.png)
+![config_tab](https://github.com/ifthenpay/joomla-virtuemart/raw/assets/img/en/config_tab.png)
 </br>
 
 * if you still do not have an Ifthenpay account, you may request one by filling the membership contract pdf file downloadable by the "Request an account" button, and send it along with requested documentation to the email ifthenpay@ifthenpay.com
-![request_account](https://github.com/ifthenpay/dev_joomla_3_virtuemart/raw/assets/img/en/request_account.png)
+![request_account](https://github.com/ifthenpay/joomla-virtuemart/raw/assets/img/en/request_account.png)
 </br>
 
 * fill the payment method configuration, and click the "Save" button:
@@ -116,7 +116,7 @@ Installation is straightforward:
 9. **Maximum amount** - Leave empty if you wish to allow any amount, or input a numeric value to filter the availability of this method by maximum order total amount
 10. **Currency** - Euro is selected by default, since it is currently the only supported currency
 
-![config_first_part](https://github.com/ifthenpay/dev_joomla_3_virtuemart/raw/assets/img/en/config_first_part.png)
+![config_first_part](https://github.com/ifthenpay/joomla-virtuemart/raw/assets/img/en/config_first_part.png)
 </br>
 
 * after saving new fields will be available:
@@ -126,15 +126,15 @@ Installation is straightforward:
 13. **Url** - (read only) this is the callback url, you may use it for testing the update of order state
 14. **Anti-phishing Key** - (read only) the anti-phishing key you have stored on database
 
-![config_second_part](https://github.com/ifthenpay/dev_joomla_3_virtuemart/raw/assets/img/en/config_second_part.png)
+![config_second_part](https://github.com/ifthenpay/joomla-virtuemart/raw/assets/img/en/config_second_part.png)
 </br>
 
 * to activate your callback press Activate (this is necessary to update the state of the order from pending to confirmed when the customer payment is received)
-![config_press_activate](https://github.com/ifthenpay/dev_joomla_3_virtuemart/raw/assets/img/en/press_activate.png)
+![config_press_activate](https://github.com/ifthenpay/joomla-virtuemart/raw/assets/img/en/press_activate.png)
 </br>
 
 * in the callback activation assistant page you will find that the Gateway Key and Anti-Phishing Key values are filled in for you correctly, so you only need to insert your Backoffice Key and press the Ativar button (the Backoffice Key is made of four sets of four digits separated by an hyphen and is given to you when signing contract with Ifthenpay, here is an example of the key: 1111-2222-3333-4444)
-![config_activate](https://github.com/ifthenpay/dev_joomla_3_virtuemart/raw/assets/img/en/activate.png)
+![config_activate](https://github.com/ifthenpay/joomla-virtuemart/raw/assets/img/en/activate.png)
 </br>
 
 * and you are finished configuring your payment plugin, you can try it out from the customer side now.
@@ -148,7 +148,7 @@ Your shop customer may pay for an order in the following manner:
 1. ...after placing an item in the cart and heading to checkout, select the Ifthenpay payment method (this may be shown as one or multiple payment method logos, or only a string of text, depending on your configuration)
 2. agree to the Terms of Service
 3. click the Confirm Purchase button
-![customer_checkout](https://github.com/ifthenpay/dev_joomla_3_virtuemart/raw/assets/img/en/checkout.png)
+![customer_checkout](https://github.com/ifthenpay/joomla-virtuemart/raw/assets/img/en/checkout.png)
 </br>
 
 
@@ -162,24 +162,24 @@ Your shop customer may pay for an order in the following manner:
   - **Ccard** - Fill in your credit card info and click the pay button
 6. you may print the payment information if you so require, by clicking the "print" button
 7. after obtaining your payment data for offline payments methods (ex: Multibanco, and Payshop) or finishing your payment using online payment (ex: MB WAY, and Ccard), you can click the "close" button to return to the shop's Thank you page
-![customer_gateway](https://github.com/ifthenpay/dev_joomla_3_virtuemart/raw/assets/img/en/gateway.png)
+![customer_gateway](https://github.com/ifthenpay/joomla-virtuemart/raw/assets/img/en/gateway.png)
 
 #### when choosing a payment method you will be presented with the following:
 
 * choosing Multibanco, you will be shown the Entity, Reference, and amount to use in an ATM or online banking app
-![customer_gateway_multibanco](https://github.com/ifthenpay/dev_joomla_3_virtuemart/raw/assets/img/en/multibanco.png)
+![customer_gateway_multibanco](https://github.com/ifthenpay/joomla-virtuemart/raw/assets/img/en/multibanco.png)
 </br>
 
 * choosing MB WAY, you will be prompted to input the phone number, and press pay in to send the notification to the MB WAY app on the smartphone (note: customer must have the app installed in the smartphone associated with the number)
-![customer_gateway_mbway](https://github.com/ifthenpay/dev_joomla_3_virtuemart/raw/assets/img/en/mbway.png)
+![customer_gateway_mbway](https://github.com/ifthenpay/joomla-virtuemart/raw/assets/img/en/mbway.png)
 </br>
 
 * choosing Payshop, you will be shown the Payshop reference and the amount to pay, these can be used on any Payshop store/agent
-![customer_gateway_payshop](https://github.com/ifthenpay/dev_joomla_3_virtuemart/raw/assets/img/en/payshop.png)
+![customer_gateway_payshop](https://github.com/ifthenpay/joomla-virtuemart/raw/assets/img/en/payshop.png)
 </br>
 
 * choosing Credit Card, you will be redirected to another page where you can fill in your credit card information and press the pay button to finish
-![customer_gateway_ccard](https://github.com/ifthenpay/dev_joomla_3_virtuemart/raw/assets/img/en/ccard.png)
+![customer_gateway_ccard](https://github.com/ifthenpay/joomla-virtuemart/raw/assets/img/en/ccard.png)
 </br>
 
 
