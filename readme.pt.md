@@ -44,7 +44,13 @@ Use a tabela abaixo para verificar a compatibilidade do plugin Ifthenpay gateway
 # Instalação
 
 Siga os passos indicados abaixo para instalar e configurar o plugin:
-* descarregue o ficheiro zip no link da release
+
+* clique no link para aceder à última versão
+![extensions_install](https://github.com/ifthenpay/dev_joomla_3_virtuemart/raw/assets/img/en/get_latest_release.png)
+</br>
+
+* descarregue o ficheiro zip de instalação
+![extensions_install](https://github.com/ifthenpay/dev_joomla_3_virtuemart/raw/assets/img/en/download_installer.png)
 </br>
 
 * no menu do topo no backoffice do Joomla selecione Extensões/Gerir/Instalar

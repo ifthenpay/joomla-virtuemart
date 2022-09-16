@@ -46,7 +46,13 @@ Follow the table below to verify Ifthenpay gateway plugin compatibility with you
 # Installation
 
 Installation is straightforward:
+
+* click the link for the latest release
+![extensions_install](https://github.com/ifthenpay/dev_joomla_3_virtuemart/raw/assets/img/en/get_latest_release.png)
+</br>
+
 * download the zip file in the release Link
+![extensions_install](https://github.com/ifthenpay/dev_joomla_3_virtuemart/raw/assets/img/en/download_installer.png)
 </br>
 
 * in Joomla backoffice top menu bar, go to Extensions/Manage/Install
