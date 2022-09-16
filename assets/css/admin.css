@@ -1,0 +1,87 @@
+.ifthen_input{
+    border: 1px solid #ccc !important;
+}
+
+.ifthen_input.invalid{
+    border: 1px solid rgb(181, 12, 12) !important;
+}
+
+.form_msg_error{
+    color: red;
+}
+
+.clear {
+    clear: both;
+}
+
+.float_left{
+    float: left;
+}
+
+.logo_ifthenpay{
+    height: 80px;
+    object-fit: contain;
+}
+
+.banner_ifthenpay{
+    height: 56px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    object-fit: contain;
+}
+
+.cont_version{
+    display: table-cell;
+    vertical-align: bottom;
+    height: 80px;
+    padding-left: 10px;
+}
+
+.cont_about{
+    margin-bottom: 30px;
+}
+
+.mr-5{
+    margin-right: 10px;
+}
+
+.conf_header_3{
+    font-size: 20px;
+    border-bottom: solid 2px rgb(78, 78, 78);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* show logos  */
+.logo_checkboxes label{
+    padding-right:15px;
+    display:inline-block;
+}
+.logo_checkboxes input[type="checkbox"]{
+    margin: 0px;
+}
+
+.url_callback{
+    word-wrap: break-word;  
+    width: 40%;
+}
+
+.callback_enabled{
+    border-radius: 5px;
+    background: #46a546;
+    padding: 4px;
+    color: white;
+    font-weight: 600;
+}
+
+.callback_disabled{
+    border-radius: 5px;
+    background: #930000;
+    padding: 4px;
+    color: white;
+    font-weight: 600;
+}
+
+
+
