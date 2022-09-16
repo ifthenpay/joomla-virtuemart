@@ -161,7 +161,7 @@ O cliente da sua loja pode pagar por uma encomenda da seguinte maneira.
 7. após obter os dados de pagamento para métodos de pagamento ofline (ex: Multibanco e Payshop) ou terminando o pagamento usando pagamento online (ex: MB WAY e Cartão de Crédito), pode clicar no botão fechar e será redirecionado para a página de agradecimento da loja
 ![customer_gateway](https://github.com/ifthenpay/dev_joomla_3_virtuemart/raw/assets/img/pt/gateway.png)
 
-#### when choosing a payment method you will be presented with the following:
+#### ao escolher o método de pagamento será exibido o seguinte:
 
 * ao escolher Multibanco, serão apresentados Entidade, Referência e Valor a usar numa caixa Multibanco ou serviço online de Homebanking 
 ![customer_gateway_multibanco](https://github.com/ifthenpay/dev_joomla_3_virtuemart/raw/assets/img/pt/multibanco.png)
