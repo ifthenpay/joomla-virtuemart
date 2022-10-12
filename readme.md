@@ -6,11 +6,11 @@ Read this in ![Português](https://github.com/ifthenpay/joomla-virtuemart/raw/as
 
 [2. Compatibility](#Compatibility)
 
-[2. Installation](#Installation)
+[3. Installation](#Installation)
 
-[3. Configuration](#Configuration)
+[4. Configuration](#Configuration)
 
-[4. Customer usage experience](#Customer-usage-experience)
+[5. Customer usage experience](#Customer-usage-experience)
 
 
 # Introduction
