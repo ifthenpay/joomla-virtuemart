@@ -6,11 +6,11 @@ Ler em ![Português](https://github.com/ifthenpay/joomla-virtuemart/raw/assets/i
 
 [2. Compatibilidade](#Compatibilidade)
 
-[2. Instalação](#Instalação)
+[3. Instalação](#Instalação)
 
-[3. Configuração](#Configuração)
+[4. Configuração](#Configuração)
 
-[4. Experiência do Utilizador Consumidor](#Experiência-do-Utilizador-Consumidor)
+[5. Experiência do Utilizador Consumidor](#Experiência-do-Utilizador-Consumidor)
 
 
 # Introdução
