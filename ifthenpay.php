@@ -350,14 +350,13 @@ class plgVmPaymentIfthenpay extends vmPSPlugin
         // get customer address
         $address = $cart->getST();
 
-        // validate ammount
+        // validate amount
         $amount = $cart_prices['salesPrice'];
-        $amount_cond = ($amount >= $method->min_amount and $amount <= $method->max_amount
-            or
-            ($method->min_amount <= $amount and ($method->max_amount == 0)));
-        if (!$amount_cond) {
-            return false;
-        }
+        if (($method->min_amount != '' && $amount < $method->min_amount) ||
+            ($method->max_amount != '' && $amount > $method->max_amount))
+            {
+                return false;
+            }
 
         // validate currency
         $plugin = JPluginHelper::getPlugin('vmpayment', 'ifthenpay');

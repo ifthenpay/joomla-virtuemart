@@ -6,11 +6,11 @@ Read this in ![Português](https://github.com/ifthenpay/joomla-virtuemart/raw/as
 
 [2. Compatibility](#Compatibility)
 
-[3. Installation](#Installation)
+[2. Installation](#Installation)
 
-[4. Configuration](#Configuration)
+[3. Configuration](#Configuration)
 
-[5. Customer usage experience](#Customer-usage-experience)
+[4. Customer usage experience](#Customer-usage-experience)
 
 
 # Introduction
@@ -42,6 +42,7 @@ Follow the table below to verify Ifthenpay gateway plugin compatibility with you
 |  | Joomla 3 + virtuemart 4 | Joomla 4 + Virtuemart 4 |
 |---|---|---|
 | Ifthenpay v1.0.0  | Compatible | Compatible  |
+| Ifthenpay v1.0.1  | Compatible | Compatible  |
 
 # Installation
 
@@ -181,6 +182,3 @@ Your shop customer may pay for an order in the following manner:
 * choosing Credit Card, you will be redirected to another page where you can fill in your credit card information and press the pay button to finish
 ![customer_gateway_ccard](https://github.com/ifthenpay/joomla-virtuemart/raw/assets/img/en/ccard.png)
 </br>
-
-
-
