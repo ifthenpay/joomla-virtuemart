@@ -6,7 +6,7 @@
        <authorUrl>http://www.ifthenpay.com</authorUrl>
        <copyright>Copyright (C) 2022 Ifthenpay, Lda. All rights reserved.</copyright>
        <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
-       <version>1.0.1</version>
+       <version>1.0.2</version>
        <description>Ifthenpay portuguese payment methods</description>
        <files>
               <filename plugin="ifthenpay">ifthenpay.php</filename>

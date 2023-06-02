@@ -2,17 +2,18 @@
 
 // plugin
 
-define('IFT_VERSION', '1.0.1');
+define('IFT_VERSION', '1.0.2');
 define('IFT_PLUGIN_TYPE', 'vmpayment');
 define('IFT_PLUGIN_NAME', 'ifthenpay');
 define('IFT_CMS', 'JOOMLA');
 
 define('IFT_PAYMENT_METHODS', array(
-    "MULTIBANCO" => "multibanco",
-    "MBWAY" => "mbway",
-    "PAYSHOP" => "payshop",
-    "CCARD" => "ccard"
-  ));
+  "MULTIBANCO" => "multibanco",
+  "MBWAY" => "mbway",
+  "PAYSHOP" => "payshop",
+  "CCARD" => "ccard"
+)
+);
 
 
 // tokens
