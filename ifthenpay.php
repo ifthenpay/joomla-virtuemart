@@ -1,26 +1,28 @@
 <?php
 
-if (!defined('_VALID_MOS') && !defined('_JEXEC')) die('Direct Access to ' . basename(__FILE__) . ' is not allowed.');
+if (!defined('_VALID_MOS') && !defined('_JEXEC'))
+    die('Direct Access to ' . basename(__FILE__) . ' is not allowed.');
 
 
-if (!class_exists('vmPSPlugin')) require(JPATH_VM_PLUGINS . DS . 'vmpsplugin.php');
+if (!class_exists('vmPSPlugin'))
+    require(JPATH_VM_PLUGINS . DS . 'vmpsplugin.php');
 
 class plgVmPaymentIfthenpay extends vmPSPlugin
 {
 
     public static $_this = false;
     private $sqlFields = array(
-        'id'                            => 'int(11) UNSIGNED NOT NULL AUTO_INCREMENT',
-        'virtuemart_order_id'           => 'int(1) UNSIGNED',
-        'order_number'                  => 'char(64)',
-        'virtuemart_paymentmethod_id'   => 'mediumint(1) UNSIGNED',
-        'payment_name'                  => 'varchar(5000)',
-        'payment_order_total'           => 'decimal(15,5) NOT NULL DEFAULT \'0.00000\'',
-        'payment_currency'              => 'char(3) ',
-        'cost_per_transaction'          => 'decimal(10,2)',
-        'cost_percent_total'            => 'decimal(10,2)',
-        'tax_id'                        => 'smallint(1)',
-        'pay_method_used'               => 'varchar(50)'
+        'id' => 'int(11) UNSIGNED NOT NULL AUTO_INCREMENT',
+        'virtuemart_order_id' => 'int(1) UNSIGNED',
+        'order_number' => 'char(64)',
+        'virtuemart_paymentmethod_id' => 'mediumint(1) UNSIGNED',
+        'payment_name' => 'varchar(5000)',
+        'payment_order_total' => 'decimal(15,5) NOT NULL DEFAULT \'0.00000\'',
+        'payment_currency' => 'char(3) ',
+        'cost_per_transaction' => 'decimal(10,2)',
+        'cost_percent_total' => 'decimal(10,2)',
+        'tax_id' => 'smallint(1)',
+        'pay_method_used' => 'varchar(50)'
     );
     private $authToken = '';
 
@@ -32,11 +34,13 @@ class plgVmPaymentIfthenpay extends vmPSPlugin
         // load helper
         if (!class_exists('Ifthenpayhelper')) {
             $path = VMPATH_ROOT . '/plugins/vmpayment/ifthenpay/helpers/ifthenpayhelper.php';
-            if (file_exists($path)) require $path;
+            if (file_exists($path))
+                require $path;
         }
         if (!class_exists('CurlRequest')) {
             $path = VMPATH_ROOT . '/plugins/vmpayment/ifthenpay/helpers/curlRequest.php';
-            if (file_exists($path)) require $path;
+            if (file_exists($path))
+                require $path;
         }
 
         parent::__construct($subject, $config);
@@ -182,8 +186,8 @@ class plgVmPaymentIfthenpay extends vmPSPlugin
             $params = [];
             $params['gatewayKey'] = $paymentMethodParams["gateway_key"];
             $params['antiphishingKey'] = $paymentMethodParams["anti_phishing_key"];
-            $params['amount'] =  $totalInPaymentCurrency['value'];
-            $params['orderId'] =  $orderDtl->virtuemart_order_id;
+            $params['amount'] = (string) $totalInPaymentCurrency['value'];
+            $params['orderId'] = $orderDtl->virtuemart_order_id;
 
             // description uses order id
             $descStr = JText::_('VMPAYMENT_IFTHENPAY_ORDER_DESC_GATEWAY');
@@ -273,7 +277,7 @@ class plgVmPaymentIfthenpay extends vmPSPlugin
 
         $payment_name = $this->renderPluginName($method);
         $html = $this->_getPaymentResponseHtml($paymentTable, $payment_name, $amountCurrency);
-        $link =    JRoute::_("index.php?option=com_virtuemart&view=orders&layout=details&order_number=" . $order['details']['BT']->order_number . "&order_pass=" . $order['details']['BT']->order_pass, false);
+        $link = JRoute::_("index.php?option=com_virtuemart&view=orders&layout=details&order_number=" . $order['details']['BT']->order_number . "&order_pass=" . $order['details']['BT']->order_pass, false);
 
         $html .= '<br />
 		<a class="vm-button-correct" href="' . $link . '">' . vmText::_('VMPAYMENT_IFTHENPAY_VIEW_ORDER') . '</a>';
@@ -352,11 +356,12 @@ class plgVmPaymentIfthenpay extends vmPSPlugin
 
         // validate amount
         $amount = $cart_prices['salesPrice'];
-        if (($method->min_amount != '' && $amount < $method->min_amount) ||
-            ($method->max_amount != '' && $amount > $method->max_amount))
-            {
-                return false;
-            }
+        if (
+            ($method->min_amount != '' && $amount < $method->min_amount) ||
+            ($method->max_amount != '' && $amount > $method->max_amount)
+        ) {
+            return false;
+        }
 
         // validate currency
         $plugin = JPluginHelper::getPlugin('vmpayment', 'ifthenpay');
@@ -616,8 +621,8 @@ class plgVmPaymentIfthenpay extends vmPSPlugin
             $apk = isset($uidData->antiphishingKey) && $uidData->antiphishingKey != '' ? $uidData->antiphishingKey : '';
             $amount = isset($uidData->amount) && $uidData->amount != '' ? $uidData->amount : '';
             $orderId = isset($uidData->orderId) && $uidData->orderId != '' ? $uidData->orderId : '';
-     
-        }else if($cb_data){
+
+        } else if ($cb_data) {
             $apk = (isset($cb_data['apk']) && $cb_data['apk'] != '') ? $cb_data['apk'] : '';
             $amount = (isset($cb_data['amt']) && $cb_data['amt'] != '') ? $cb_data['amt'] : '';
             $orderId = (isset($cb_data['oid']) && $cb_data['oid'] != '') ? $cb_data['oid'] : '';
@@ -757,10 +762,10 @@ class plgVmPaymentIfthenpay extends vmPSPlugin
 
     // utility functions bellow
 
-    static function   getCancelUrl($order)
+    static function getCancelUrl($order)
     {
-        return  JURI::root() . 'index.php?option=com_virtuemart&view=pluginresponse&task=pluginUserPaymentCancel' .
-            '&pm=' . $order['details']['BT']->virtuemart_paymentmethod_id  .
+        return JURI::root() . 'index.php?option=com_virtuemart&view=pluginresponse&task=pluginUserPaymentCancel' .
+            '&pm=' . $order['details']['BT']->virtuemart_paymentmethod_id .
             '&oid=' . $order['details']['BT']->virtuemart_order_id .
             '&apk=[ANTI_PHISHING_KEY]' .
             '&amt=[AMOUNT]' .
@@ -769,13 +774,13 @@ class plgVmPaymentIfthenpay extends vmPSPlugin
 
     static function getOnlineReturnUrl($paymentMethod, $paymentMethodId, $orderNumber)
     {
-        return  JURI::root() . "index.php?option=com_virtuemart&view=pluginresponse&task=pluginresponsereceived&pm=" . $paymentMethodId . '&oid=' . $orderNumber .
+        return JURI::root() . "index.php?option=com_virtuemart&view=pluginresponse&task=pluginresponsereceived&pm=" . $paymentMethodId . '&oid=' . $orderNumber .
             '&pmt=' . $paymentMethod;
     }
 
     static function getReturnUrl($order)
     {
-        return  JURI::root() . "index.php?option=com_virtuemart&view=pluginresponse&task=pluginresponsereceived&pm=" . $order['details']['BT']->virtuemart_paymentmethod_id . '&Itemid=' . vRequest::getInt('Itemid') .
+        return JURI::root() . "index.php?option=com_virtuemart&view=pluginresponse&task=pluginresponsereceived&pm=" . $order['details']['BT']->virtuemart_paymentmethod_id . '&Itemid=' . vRequest::getInt('Itemid') .
             '&oid=' . $order['details']['BT']->virtuemart_order_id .
             '&apk=[ANTI_PHISHING_KEY]' .
             '&amt=[AMOUNT]' .
