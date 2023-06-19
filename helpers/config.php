@@ -7,12 +7,14 @@ define('IFT_PLUGIN_TYPE', 'vmpayment');
 define('IFT_PLUGIN_NAME', 'ifthenpay');
 define('IFT_CMS', 'JOOMLA');
 
-define('IFT_PAYMENT_METHODS', array(
-  "MULTIBANCO" => "multibanco",
-  "MBWAY" => "mbway",
-  "PAYSHOP" => "payshop",
-  "CCARD" => "ccard"
-)
+define(
+	'IFT_PAYMENT_METHODS',
+	array(
+		"MULTIBANCO" => "multibanco",
+		"MBWAY" => "mbway",
+		"PAYSHOP" => "payshop",
+		"CCARD" => "ccard"
+	)
 );
 
 

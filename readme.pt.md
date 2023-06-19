@@ -41,6 +41,7 @@ Use a tabela abaixo para verificar a compatibilidade do plugin Ifthenpay gateway
 |---|---|---|
 | Ifthenpay v1.0.0 | Compatível | Compatível |
 | Ifthenpay v1.0.1 | Compatível | Compatível |
+| Ifthenpay v1.0.2 | Compatível | Compatível |
 
 # Instalação
 
