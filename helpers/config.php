@@ -2,7 +2,7 @@
 
 // plugin
 
-define('IFT_VERSION', '1.0.2');
+define('IFT_VERSION', '1.0.3');
 define('IFT_PLUGIN_TYPE', 'vmpayment');
 define('IFT_PLUGIN_NAME', 'ifthenpay');
 define('IFT_CMS', 'JOOMLA');

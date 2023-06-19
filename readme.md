@@ -43,7 +43,7 @@ Follow the table below to verify Ifthenpay gateway plugin compatibility with you
 |---|---|---|
 | Ifthenpay v1.0.0  | Compatible | Compatible  |
 | Ifthenpay v1.0.1  | Compatible | Compatible  |
-| Ifthenpay v1.0.2  | Compatible | Compatible  |
+| Ifthenpay v1.0.3  | Compatible | Compatible  |
 
 # Installation
 
