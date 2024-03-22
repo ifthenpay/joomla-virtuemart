@@ -6,7 +6,7 @@
        <authorUrl>http://www.ifthenpay.com</authorUrl>
        <copyright>Copyright (C) 2022 Ifthenpay, Lda. All rights reserved.</copyright>
        <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
-       <version>1.0.4</version>
+       <version>1.0.5</version>
        <description>Ifthenpay portuguese payment methods</description>
        <files>
               <filename plugin="ifthenpay">ifthenpay.php</filename>
@@ -49,8 +49,8 @@
 
 
                             <field name="countries" type="vmcountries" default="" multiple="multiple" label="VMPAYMENT_IFTHENPAY_COUNTRIES" description="VMPAYMENT_IFTHENPAY_COUNTRIES_DESC"/>
-                            <field name="min_amount" type="text" label="VMPAYMENT_IFTHENPAY_MIN" description="VMPAYMENT_IFTHENPAY_MIN_DESC" />
-                            <field name="max_amount" type="text" label="VMPAYMENT_IFTHENPAY_MAX" description="VMPAYMENT_IFTHENPAY_MAX_DESC" />
+                            <field name="min_amount" type="text" label="VMPAYMENT_IFTHENPAY_MIN" description="VMPAYMENT_IFTHENPAY_MIN_DESC" default="0"/>
+                            <field name="max_amount" type="text" label="VMPAYMENT_IFTHENPAY_MAX" description="VMPAYMENT_IFTHENPAY_MAX_DESC" default="9999"/>
                             <field name="payment_currency" type="vmacceptedcurrency" default="47" label="VMPAYMENT_IFTHENPAY_CURRENCY" description="VMPAYMENT_IFTHENPAY_CURRENCY_DESC"/>
 
                             <field type="callbacktitle"/>

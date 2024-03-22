@@ -2,7 +2,7 @@
 
 // plugin
 
-define('IFT_VERSION', '1.0.4');
+define('IFT_VERSION', '1.0.5');
 define('IFT_PLUGIN_TYPE', 'vmpayment');
 define('IFT_PLUGIN_NAME', 'ifthenpay');
 define('IFT_CMS', 'JOOMLA');
@@ -13,7 +13,8 @@ define(
 		"MULTIBANCO" => "multibanco",
 		"MBWAY" => "mbway",
 		"PAYSHOP" => "payshop",
-		"CCARD" => "ccard"
+		"CCARD" => "ccard",
+		"COFIDIS" => "cofidis"
 	)
 );
 

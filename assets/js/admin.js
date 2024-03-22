@@ -111,8 +111,6 @@ jQuery().ready(function ($) {
     if (isValidate) {
       form.task.value = a;
       form.submit();
-      let callbackParams = getFormCallbackParams();
-      ajax_postActivateCallback(callbackParams);
     }
 
     return false;
@@ -123,23 +121,19 @@ function isNumValid(value) {
   let result = true;
 
   // only numbers and dot or empty
-  if (value !== "") {
     let pattern = /^\$?[\d,]+(\.\d*)?$/;
     if (!value.match(pattern)) {
       result = false;
     }
-  }
 
   return result;
 }
 
 function isMinMaxValid(min, max) {
   let result = true;
-  if (min !== "" && max !== "") {
     if (min >= max) {
       result = false;
     }
-  }
 
   return result;
 }

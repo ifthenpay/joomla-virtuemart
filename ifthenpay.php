@@ -136,7 +136,6 @@ class plgVmPaymentIfthenpay extends vmPSPlugin
 			and $method->status_pending != "C") ? $method->status_pending : 'U');
 		$order['customer_notified'] = 1;
 
-		$modelOrder->updateStatusForOneOrder($order['details']['BT']->virtuemart_order_id, $order, true);
 
 
 		// send data to gateway
@@ -152,6 +151,10 @@ class plgVmPaymentIfthenpay extends vmPSPlugin
 			$mainframe->redirect($urlError);
 			return true;
 		}
+
+		$order['comments'] = '<b>'. vmText::_('VMPAYMENT_IFTHENPAY_EMAIL_GATEWAY_LINK') .'</b> <a href="'. $urlGatewayToPay .'">'. vmText::_('VMPAYMENT_IFTHENPAY_EMAIL_GATEWAY_DESC') .'</a><br />';
+
+		$modelOrder->updateStatusForOneOrder($order['details']['BT']->virtuemart_order_id, $order, true);
 
 
 		$this->log('info', 'on event plgVmConfirmedOrder, dbValues: ' . print_r($dbValues, true));
@@ -639,7 +642,6 @@ class plgVmPaymentIfthenpay extends vmPSPlugin
 			$apk = isset($uidData->antiphishingKey) && $uidData->antiphishingKey != '' ? $uidData->antiphishingKey : '';
 			$amount = isset($uidData->amount) && $uidData->amount != '' ? $uidData->amount : '';
 			$orderId = isset($uidData->orderId) && $uidData->orderId != '' ? $uidData->orderId : '';
-
 		} else if ($cb_data) {
 			$apk = (isset($cb_data['apk']) && $cb_data['apk'] != '') ? $cb_data['apk'] : '';
 			$amount = (isset($cb_data['amt']) && $cb_data['amt'] != '') ? $cb_data['amt'] : '';

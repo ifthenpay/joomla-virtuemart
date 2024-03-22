@@ -39,7 +39,7 @@ Mais informações em [Ifthenpay](https://ifthenpay.com).
 Use a tabela abaixo para verificar a compatibilidade do plugin Ifthenpay gateway com a sua loja online.
 |  | Joomla 3 + virtuemart 4 | Joomla 4 + Virtuemart 4 |
 |---|---|---|
-| Ifthenpay v1.0.0 a v1.0.4 | Compatível | Compatível |
+| Ifthenpay v1.0.0 a v1.0.5 | Compatível | Compatível |
 
 # Instalação
 
